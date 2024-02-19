@@ -1,0 +1,45 @@
+class Box {
+    double width;
+    double height;
+    double depth;
+
+    // Constructor with no parameters
+    Box() {
+        width = 10;
+        height = 10;
+        depth = 10;
+    }
+
+    // Constructor with one parameter
+    Box(double len) {
+        width = len;
+        height = len;
+        depth = len;
+    }
+
+    // Constructor with three parameters
+    Box(double w, double h, double d) {
+        width = w;
+        height = h;
+        depth = d;
+    }
+
+    // Method to calculate and return volume
+    double volume() {
+        return width * height * depth;
+    }
+}
+
+public class ConstructorOverloadingDemo1 {
+    public static void main(String[] args) {
+        // Creating objects using different constructors
+        Box myBox1 = new Box(); // No parameters
+        Box myBox2 = new Box(5); // One parameter
+        Box myBox3 = new Box(3, 4, 5); // Three parameters
+
+        // Displaying volume of each box
+        System.out.println("Volume of myBox1 is " + myBox1.volume());
+        System.out.println("Volume of myBox2 is " + myBox2.volume());
+        System.out.println("Volume of myBox3 is " + myBox3.volume());
+    }
+}
