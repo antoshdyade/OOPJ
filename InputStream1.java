@@ -1,4 +1,4 @@
-package SY2024;
+package amd;
 import java.io.*;
 
 public class InputStream1 {
