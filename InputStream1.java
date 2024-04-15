@@ -6,7 +6,7 @@ public class InputStream1 {
 	public static void main(String[] args) {
 	try
 		{
-		FileInputStream fis=new FileInputStream("E://Java/MyFile.txt");
+		FileInputStream fis=new FileInputStream("E:/Java/MyFile.txt");
 		
 		//Method 1
 		int x;
