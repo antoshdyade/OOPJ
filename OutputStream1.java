@@ -10,12 +10,16 @@ public class OutputStream1 {
 		 FileOutputStream fos=new FileOutputStream("E:/Java/MyFile.txt");
 	     String msg="Welcome to Java Class";
 	    byte b[]=msg.getBytes();      
-	    
+
+//Method1
 	     //for(byte x:b)
-	    	// fos.write(x);
-	    
+		// fos.write(x);
+	  
+//Method 2  
 	    // fos.write(b);
-	     fos.write(b,11,msg.length()-11);
+
+//Method 3
+		fos.write(b,11,msg.length()-11);
 		 fos.close();
 	
 	} catch (FileNotFoundException e) {
