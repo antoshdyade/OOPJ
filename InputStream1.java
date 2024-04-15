@@ -36,7 +36,7 @@ public class InputStream1 {
 		System.out.println(msg);
 		*/
 		
-		
+	fis.close();	
 	}catch (FileNotFoundException e) {
 		System.out.println(e);
 	}catch (IOException e) {
