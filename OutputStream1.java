@@ -1,4 +1,4 @@
-package SY2024;
+package amd;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -7,7 +7,7 @@ public class OutputStream1 {
 
 	public static void main(String[] args) {
 	try {
-		 FileOutputStream fos=new FileOutputStream("E://Java/MyFile.txt");
+		 FileOutputStream fos=new FileOutputStream("E:/Java/MyFile.txt");
 	     String msg="Welcome to Java Class";
 	    byte b[]=msg.getBytes();      
 	    
