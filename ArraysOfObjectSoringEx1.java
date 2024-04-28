@@ -38,7 +38,7 @@ public class ArraysOfObjectSoringEx1 {
         s1[2] = new Student(3, "Suresh", 92.4f);
         s1[3] = new Student(4, "Ganesh", 76.4f);
 
-        // Sorting array of students by Percentage
+        // Sorting array of students by Percentage and Name
         Arrays.sort(s1, 0, 4, Comparator.comparing(Student::getPage).thenComparing(Student::getName));
 
        
