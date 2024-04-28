@@ -45,7 +45,7 @@ public class ArraysOfObjectSoringEx1 {
 
         System.out.println("Sorted array of students by Percentage:");
         for (int i = 0; i < s1.length && s1[i] != null; i++) {
-            System.out.println("R.No.: " + s1[i].getRno() + ", Name: " + s1[i].getName() + ", Page: " + s1[i].getPage());
+            System.out.println("R.No.: " + s1[i].getRno() + ", Name: " + s1[i].getName() + ", Percentage: " + s1[i].getPage());
         }
 
         //Sorting Primitive Data type
