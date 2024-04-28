@@ -29,8 +29,6 @@ public class ArraysOfObjectSoringReverseEx1 {
 
     public static void main(String[] args) throws Exception {
 
-        int[] a1 = {1, 6, 2, 8, 4, 3, 5, 7};
-
         Student[] s1 = new Student[20];
 
         s1[0] = new Student(1, "Ramesh", 87.5f);
@@ -41,14 +39,12 @@ public class ArraysOfObjectSoringReverseEx1 {
         // Sorting array of students by page
         Arrays.sort(s1, 0, 4, Comparator.comparing(Student::getPage).thenComparing(Student::getName).reversed());
 
-        Arrays.sort(a1);
+      
 
         System.out.println("Sorted array of students by page:");
         for (int i = 0; i < s1.length && s1[i] != null; i++) {
             System.out.println("R.No.: " + s1[i].getRno() + ", Name: " + s1[i].getName() + ", Page: " + s1[i].getPage());
         }
 
-        System.out.println("Sorted array of integers:");
-        System.out.println(Arrays.toString(a1));
     }
 }
