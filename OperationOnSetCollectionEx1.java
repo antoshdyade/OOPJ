@@ -1,4 +1,4 @@
-package sveri;
+package amd;
 
 import java.util.HashSet;
 import java.util.Set;
