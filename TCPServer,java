@@ -1,0 +1,33 @@
+import java.io.*;
+import java.net.*;
+
+public class TCPServer {
+    public static void main(String[] args) {
+        try {
+            ServerSocket serverSocket = new ServerSocket(9999); // Create a server socket on port 9999
+            System.out.println("Server started. Waiting for clients...");
+
+            Socket clientSocket = serverSocket.accept(); // Wait for a client to connect
+            System.out.println("Client connected.");
+
+            // Get input and output streams from the socket
+            BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+            PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
+
+            // Read input from client and send a response
+            String inputLine;
+            while ((inputLine = in.readLine()) != null) {
+                System.out.println("Received from client: " + inputLine);
+                out.println("Server received: " + inputLine);
+            }
+
+            // Close streams and sockets
+            in.close();
+            out.close();
+            clientSocket.close();
+            serverSocket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
